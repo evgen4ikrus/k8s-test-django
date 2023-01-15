@@ -145,3 +145,4 @@ cython_debug/
 .vscode
 data.json
 staticfiles
+.idea
