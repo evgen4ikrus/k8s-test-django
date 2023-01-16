@@ -72,3 +72,7 @@ minicube ip
 ```
 <ваш ip minikube> star-burger.test
 ```
+* Запустите регулярное удаление сессий раз в месяц (1-го числа в полночь):
+```commandline
+kubectl apply -f django-clearsessions.yaml
+```
