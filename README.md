@@ -50,11 +50,11 @@ minikube image load django_app
 ```
 * Загрузите конфигурационный файл в кластер:
 ```commandline
-kubectl apply -f django-config-map.yaml
+kubectl apply -f kubernetes/django-config-map.yaml
 ```
 * Разверните сайт:
 ```commandline
-kubectl apply -f django-deployment.yaml
+kubectl apply -f kubernetes/django-deployment.yaml
 ```
 * Включите надстройку minikube ingress (в случае возникновения проблем, попробуйте minikube версии v1.23.2):
 ```commandline
@@ -62,7 +62,7 @@ minikube addons enable ingress
 ```
 * Создайте объект Ingress:
 ```commandline
-kubectl apply -f django-ingress.yaml
+kubectl apply -f kubernetes/django-ingress.yaml
 ```
 * Узнайте ip minikube:
 ```commandline
@@ -74,5 +74,5 @@ minicube ip
 ```
 * Запустите регулярное удаление сессий раз в месяц (1-го числа в полночь):
 ```commandline
-kubectl apply -f django-clearsessions.yaml
+kubectl apply -f kubernetes/django-clearsessions.yaml
 ```
