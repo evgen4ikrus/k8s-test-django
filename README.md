@@ -56,3 +56,19 @@ kubectl apply -f django-config-map.yaml
 ```commandline
 kubectl apply -f django-deployment.yaml
 ```
+* Включите надстройку minikube ingress (в случае возникновения проблем, попробуйте minikube версии v1.23.2):
+```commandline
+minikube addons enable ingress
+```
+* Создайте объект Ingress:
+```commandline
+kubectl apply -f django-ingress.yaml
+```
+* Узнайте ip minikube:
+```commandline
+minicube ip
+```
+* Чтобы сайт [star-burger.test](http://star-burger.test) был доступен, добавьте в файл `/etc/hosts`:
+```
+<ваш ip minikube> star-burger.test
+```

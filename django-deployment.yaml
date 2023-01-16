@@ -27,7 +27,6 @@ kind: Service
 metadata:
   name: dj-test-svc
 spec:
-  type: NodePort
   ports:
   - name: http
     port: 80

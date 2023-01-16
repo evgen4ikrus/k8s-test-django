@@ -7,5 +7,5 @@ metadata:
 data:
   DATABASE_URL: postgres://test_k8s:OwOtBep9Frut@192.168.100.7:8002/test_k8s
   SECRET_KEY: replace
-  DEBUG: "TRUE"
+  DEBUG: "FALSE"
   ALLOWED_HOSTS: "*"
