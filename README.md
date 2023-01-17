@@ -76,3 +76,7 @@ minicube ip
 ```commandline
 kubectl apply -f kubernetes/django-clearsessions.yaml
 ```
+* Сделайте миграции базы данных:
+```commandline
+kubectl apply -f kubernetes/django-migrate.yaml
+```
